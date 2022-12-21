@@ -1,11 +1,9 @@
 # Terrapin_Mitochondria_Project
-Sequence assembly and variant calling for diamondback terrapin mitochondrial genome
+Sequence assembly, variant calling, and analyses for diamondback terrapin mitochondrial genome
 
-### This is the pipeline used to generate consensus sequences, alignments, and call variants for the mitochondrial genome of the diamondback terrapin (malaclemys terrapin)
+## 1) The first step in this project was aligning raw reads to the reference genome using bwa. Code to do this is in the Mitochondrial alignment.sh script. ### These bams were used to extract consensus sequences and as input to genious to generate phylip, fasta, and nexus-formatted alignments. We used the GUI interface of PopArt to generate Median-Joining Haplotype Networks.
 
-## Scripts to be run are as follows
 
-1) Mitochondrial alignment.sh
+### 2) Following alignment, we then called variants using bcftools. The code to do this can be found in the Mpileup_Variant_calling.sh script.
 
-2) Mpileup_Variant_calling.sh
-
+### 3) Once we had a VCF, we estimated summary statistics for all Alabama samples using the Mito_Genome_Summaries.R script
