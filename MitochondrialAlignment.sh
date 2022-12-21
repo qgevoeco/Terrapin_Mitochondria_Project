@@ -2,7 +2,7 @@
 #SBATCH --job-name=Mito_Alignment
 #SBATCH --ntasks=14
 #SBATCH --partition=general          # name of partition to submit job
-#SBATCH --time=10:00:00
+#SBATCH --time=24:00:00
 #SBATCH --mail-type=ALL              # will send email for begin,end,fail
 #SBATCH --mail-user=sbw0033@auburn.edu
 #SBATCH --output=Mito_Alignment_%A_%a.output 	#Changes the output to correspond to each subjob
@@ -18,6 +18,7 @@ FinalAlignmentDirectory="/scratch/sbw0033/Mitochondria_Project/Data/Alignments/F
 
 #Get that lil genome onto easley
 #scp -r /Users/samweaver/Docs/TerrapinRProject/Data/Terrapin_Mitochondrial_Reference.fasta sbw0033@easley.auburn.edu:/scratch/sbw0033/Mitochondria_Project/Data #Transfer the annotation
+#scp -r sbw0033@easley.auburn.edu:/scratch/sbw0033/TerrapinGenomics/Data/FastqCopiesFinal/clean /Volumes/BackupPlus/ #Transfer the annotation
 
 #/scratch/sbw0033/Mitochondria_Project/Data
 
@@ -94,9 +95,9 @@ rm ${CleanedBamDirectory}/"${SLURM_ARRAY_TASK_ID}"_IDed.bam
 ############################################################################################################
 #Generate concensus sequence from our samples
 ############################################################################################################
-mkdir /scratch/sbw0033/TerrapinGenomics/Data/Concensus_SQs/
+#mkdir /scratch/sbw0033/TerrapinGenomics/Data/Consensus_SQs/
+cd /scratch/sbw0033/Mitochondria_Project/Data/Consensus_SQs/
 # Get consensus fastq file (vcfutils.pl is part of bcftools)
-#samtools mpileup -uf /scratch/sbw0033/Mitochondria_Project/Data/Terrapin_Mitochondrial_Reference.fasta "${SLURM_ARRAY_TASK_ID}"_0.bam | bcftools call -c | vcfutils.pl vcf2fq > /scratch/sbw0033/TerrapinGenomics/Data/Concensus_SQs/${SLURM_ARRAY_TASK_ID}_cns.fastq
-# Convert .fastq to .fasta and set bases of quality lower than 20 to N
-#cd /scratch/sbw0033/TerrapinGenomics/Data/Concensus_SQs/
-#seqtk seq -aQ64 -q20 -n N ${SLURM_ARRAY_TASK_ID}_cns.fastq > ${SLURM_ARRAY_TASK_ID}_cns.fasta
+#samtools mpileup -uf /scratch/sbw0033/Mitochondria_Project/Data/Terrapin_Mitochondrial_Reference.fasta ${SLURM_ARRAY_TASK_ID}_0.bam | bcftools call -c --ploidy 1 | vcfutils.pl vcf2fq > /scratch/sbw0033/Mitochondria_Project/Data/Consensus_SQs/${SLURM_ARRAY_TASK_ID}_cns.fastq
+#An easier way to make the sequences
+samtools bam2fq ${SLURM_ARRAY_TASK_ID}_0.bam | seqtk seq -A > /scratch/sbw0033/Mitochondria_Project/Data/Consensus_SQs/Unprocessed_${SLURM_ARRAY_TASK_ID}_0.bam.fq
