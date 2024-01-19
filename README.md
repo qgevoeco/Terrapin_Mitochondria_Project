@@ -1,7 +1,7 @@
 # Terrapin Mitochondria Project
 Sequence assembly, variant calling, and analyses for diamondback terrapin mitochondrial genome
 
-All work conducted with Tonia Schwartz and Matthew Wolak at Auburn University
+All work conducted by Samuel Weaver, Tonia Schwartz, and Matthew Wolak at Auburn University
 
 ### 1) First, we aligned raw reads to the reference genome using bwa. 
 
