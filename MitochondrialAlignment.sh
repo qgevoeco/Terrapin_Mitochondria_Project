@@ -27,7 +27,7 @@ module load bwa/0.7.17
 module load samtools/1.11
 module load picard/2.23.9
 module load java/15.0.1
-module load bcftools
+module load bcftools/1.17
 
 #index the reference genome
 #cd /scratch/sbw0033/Mitochondria_Project/Data/Terrapin_Mitochondrial_Reference.fasta
