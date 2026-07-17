@@ -1,1 +1,40 @@
 cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Wolak"
+  given-names: "Matthew E."
+  orcid: "https://orcid.org/0000-0002-7962-0071"
+- family-names: "Schwartz"
+  given-names: "Tonia S."
+  orcid: "https://orcid.org/0000-0002-7712-2810"
+- family-names: "Weaver"
+  given-names: "Samuel"
+title: "Data and Code for Malaclemys terrapin mitochondrial DNA analysis"
+version: v0.0
+doi: 10.5281/zenodo.21419406
+date-released: 2026-07-17
+url: "https://github.com/qgevoeco/Terrapin_Mitochondria_Project"
+preferred-citation:
+  type: article
+  authors:
+- family-names: "Weaver"
+  given-names: "Samuel"
+- family-names: "Schwartz"
+  given-names: "Tonia S."
+  orcid: "https://orcid.org/0000-0002-7712-2810"
+- family-names: "Gross"
+  given-names: "Iwo P."
+  orcid: "https://orcid.org/0000-0001-6573-832X"
+- family-names: "Wibbels"
+  given-names: "Thane"
+  orcid: "https://orcid.org/0000-0003-4800-568X"
+- family-names: "Wolak"
+  given-names: "Matthew E."
+  orcid: "https://orcid.org/0000-0002-7962-0071"
+  doi: "10.0000/00000"
+  journal: "bioRxiv"
+  month: 7
+  start: 1 # First page number
+  end: XX # Last page number
+  title: "Whole mitochondrial genome sequencing identifies unique haplotype diversity and a lack of fine-scale genetic structure: a case study in the vulnerable estuarine turtle Malaclemys terrapin"
+  year: 2026
