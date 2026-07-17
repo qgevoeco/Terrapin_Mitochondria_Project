@@ -1,6 +1,4 @@
 # Terrapin Mitochondria Project
-Sequence assembly, variant calling, and analyses for diamondback terrapin mitochondrial genome.
-
 Version controlled and editable source for the data and code supporting the manuscript
 __"Whole mitochondrial genome sequencing identifies unique haplotype diversity and a lack of fine-scale genetic structure: a case study in the vulnerable estuarine turtle Malaclemys terrapin"__ by _Sam Weaver, Tonia S. Schwartz, Iwo P. Gross, Thane Wibbels, and Matthew E. Wolak_.
 
