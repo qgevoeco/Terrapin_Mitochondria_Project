@@ -1,4 +1,7 @@
 # Terrapin Mitochondria Project
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21419405.svg)](https://doi.org/10.5281/zenodo.21419405)
+
 Version controlled and editable source for the data and code supporting the manuscript
 __"Whole mitochondrial genome sequencing identifies unique haplotype diversity and a lack of fine-scale genetic structure: a case study in the vulnerable estuarine turtle Malaclemys terrapin"__ by _Sam Weaver, Tonia S. Schwartz, Iwo P. Gross, Thane Wibbels, and Matthew E. Wolak_.
 
@@ -15,7 +18,7 @@ If you use these data or code, please cite the publication (preference)
 
 or data package 
 
->zenodo TODO
+>https://doi.org/10.5281/zenodo.21419406
 
 
 <!-- TODO add:
