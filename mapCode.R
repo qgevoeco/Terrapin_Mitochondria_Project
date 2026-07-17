@@ -1,5 +1,4 @@
 rm(list = ls())
-setwd("~/Documents/Turtles/TurtleGenomics/terpMitoHaplo_MS2022-2023/Figures")
 
 
 library(leaflet)
