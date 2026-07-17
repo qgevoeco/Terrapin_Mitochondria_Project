@@ -19,7 +19,7 @@ or data package
 
 
 <!-- TODO add:
- NCBI Accession number information/project/submission
+ NCBI Accession number link to project/submission
 -->
 
 ## Workflow
