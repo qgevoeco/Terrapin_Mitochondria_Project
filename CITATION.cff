@@ -9,6 +9,7 @@ authors:
     orcid: "https://orcid.org/0000-0002-7712-2810"
   - family-names: "Weaver"
     given-names: "Samuel"
+    orcid: "https://orcid.org/0000-0002-7926-5276"
 title: "Data and Code for Malaclemys terrapin mitochondrial DNA analysis"
 version: v0.0
 doi: 10.5281/zenodo.21419405
@@ -19,6 +20,7 @@ preferred-citation:
   authors:
   - family-names: "Weaver"
     given-names: "Samuel"
+    orcid: "https://orcid.org/0000-0002-7926-5276"
   - family-names: "Schwartz"
     given-names: "Tonia S."
     orcid: "https://orcid.org/0000-0002-7712-2810"
